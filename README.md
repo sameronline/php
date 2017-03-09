@@ -32,6 +32,8 @@
 | PHP_FPM_MAX_CHILDREN                  | Int    | 4               | |
 | PHP_FPM_MAX_REQUESTS                  | Int    | 0               | |
 | PHP_FPM_PROCESS_IDLE_TIMEOUT          | Int    | 30              | |
+| PHP_FPM_APP_USER			| String | www-data	   | |
+| PHP_FPM_APP_GROUP			| String | www-data	   | |
 | PHP_MEMORY_LIMIT                      | Int    | 1024            | |
 | PHP_MAX_EXECUTION_TIME                | Int    | 300             | |
 | PHP_MAX_INPUT_TIME                    | Int    | 60              | |

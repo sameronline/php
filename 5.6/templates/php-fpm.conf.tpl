@@ -4,8 +4,8 @@ log_level = {{ getenv "PHP_FPM_LOG_LEVEL" "notice" }}
 daemonize = no
 
 [app]
-user = www-data
-group = www-data
+user = {{ getenv "PHP_FPM_APP_USER" "www-data" }}
+group = {{ getenv "PHP_FPM_APP_GROUP" "www-data" }}
 listen = [::]:9000
 access.log = {{ getenv "PHP_FPM_ACCESS_LOG" "/proc/self/fd/2" }}
 catch_workers_output = {{ getenv "PHP_FPM_CATCH_WORKERS_OUTPUT" "yes" }}
